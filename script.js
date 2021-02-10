@@ -22,6 +22,8 @@ document.querySelector('.check').addEventListener('click', function () {
     }
     else if (guess === secreatNumber) {
         document.querySelector('.message').textContent = "yee! Correct number";
+        document.querySelector('body').style.backgroundColor='green';
+        document.querySelector('.number').style.width='30rem';
 
     }
     else if (guess > secreatNumber) {
